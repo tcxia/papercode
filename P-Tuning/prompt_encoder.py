@@ -14,7 +14,7 @@ class PromptEncoder(nn.Module):
     def __init__(self, template, hidden_size, tokenizer, device, args) -> None:
         super().__init__()
         self.device = device
-        self.spell_lenght = sum(template)
+        self.spell_length = sum(template)
         self.hidden_size = hidden_size
         self.tokenizer = tokenizer
         self.args = args
